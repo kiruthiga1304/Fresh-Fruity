@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ordering your favourite fresh fruits</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<section class="order-form">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="fruit">Select Fruit:</label>
+                <select id="fruit" name="fruit" required>
+                    <option value="bananas">Bananas</option>
+                    <option value="mangoes">Mangoes</option>
+                    <option value="strawberries">Strawberries</option>
+                    <option value="pineapples">Pineapples</option>
+                </select><br><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required><br><br>
+
+                <label for="address">Delivery Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Place Order">
+            </form>
+        </div>
+    </section>
+</body>
+    </html>

@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F8F4F1;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    background-color: #FFD6BA;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+nav ul {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 100;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fba66d;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.featured {
+    background-color: #fae2d2;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 20px;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.featured p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+.featured .btn {
+    background-color: #ff7a51;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.featured .btn:hover {
+    background-color: #FF8571;
+}
+
+.products {
+    background-color: #FFF6F4;
+    padding: 60px 0;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.product-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-item .btn {
+    background-color: #FFAA90;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.buy_btn {
+    background-color: #FFAA90;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+.product-item .btn:hover {
+    background-color: #FF8571;
+}
+
+.order-form {
+    background-color: #f9ceca;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto; /* Centers the form horizontally */
+    max-width: 600px; /* Medium size for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order-form h2 {
+    color: #ff8571;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Form Labels and Inputs */
+.order-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #264653;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="number"],
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.order-form textarea {
+    resize: vertical;
+}
+
+.order-form input[type="submit"] {
+    background-color: #FFAA90;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.order-form input[type="submit"]:hover {
+    background-color: #FF8571;
+}
+.apicall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .info-box {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .info-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+  }
+.reviews {
+    background-color: #f9f9f9;
+    margin: 30px auto;
+    padding: 40px 20px;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.reviews blockquote {
+    background-color: #fff;
+    border-left: 5px solid #2a9d8f;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviews blockquote p {
+    margin: 0;
+}
+
+.reviews blockquote strong {
+    color: #2a9d8f;
+}
+
+.reviews blockquote em, .reviews blockquote u {
+    color: #e76f51;
+}
+
+.reviews blockquote b {
+    color: #264653;
+}
+
+footer {
+    background-color: #FFD6BA;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #555;
+    padding-top: 20px;
+}
+#time-display {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 5px;
+  }
